@@ -1,0 +1,415 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body {
+    width: 100%;
+    overflow-x: hidden;
+}
+
+.wrapper {
+    padding: 0px 15px;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 17px 0px;
+    background: transparent;
+}
+
+.logo {
+    height: 40px;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.35);
+}
+
+.logo img {
+    height: 43px;
+    width: 185px;
+    padding: 3px 0px;
+}
+
+.menu_bar {
+    display: none;
+}
+
+.menu_bar i {
+    color: #6b4cb3;
+    cursor: pointer;
+}
+
+.nav_menu {
+    display: flex;
+    justify-content: end;
+}
+
+.drop {
+    list-style: none;
+    padding-left: 15px;
+    font-size: 14px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.drop a {
+    color: #5C5D5F;
+}
+
+/* MAIN */
+
+.main-container {
+    display: flex;
+    /* height: 767px; */
+}
+
+.steps {
+    background: #f1f1f1;
+    display: table-cell;
+    vertical-align: middle;
+    width: 20%;
+    transition: all .7s;
+}
+
+.steps ul li {
+    list-style: none;
+    padding: 20px 40px;
+}
+
+.steps ul li a {
+    color: #5C5D5F;
+    font-size: 14px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: bold;
+}
+
+.steps ul li a span::after {
+    content: " - ";
+}
+
+.data-view {
+    width: 80%;
+    background-color: #CCEBF5;
+    padding: 25px;
+}
+
+.data-view h4 {
+    margin-bottom: 0;
+    color: #39435b;
+    font-weight: bold;
+    font-size: 25px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin-top: 7px;
+    text-align: left;
+    padding-left: 60px;
+}
+
+.payment-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 35px;
+    background-color: #CCEBF5;
+    padding-bottom: 80px;
+}
+
+.payment-container img {
+    height: 368px;
+    width: 300px;
+}
+
+h5 {
+    font-size: 17px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    font-family: system-ui;
+    font-weight: 600;
+    color: #39435B;
+}
+
+.file-submit {
+    display: flex;
+    flex-direction: column;
+}
+
+#fileinput {
+    height: 38px;
+    width: 410px;
+    padding: 6px 10px;
+    border-radius: 5px;
+    background-color: white;
+}
+
+input[type="file"] {
+    font-size: 16px;
+}
+
+.buttons-container {
+    margin-top: 15px;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.payment-btn {
+    height: 55px;
+    width: 84px;
+    color: white;
+    background-color: #39435B;
+    font-size: 16px;
+    border: none;
+    border-radius: 10px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    padding: 14px 16px;
+    margin-bottom: 0px;
+    transition: all 0.3s linear;
+    cursor: pointer;
+}
+
+.payment-btn:hover {
+    background: transparent;
+    color: black;
+    border: 1px solid;
+}
+
+.footer {
+    display: flex;
+    width: 100%;
+    padding: 0px 32px;
+    margin-bottom: 20px;
+}
+
+marquee {
+    height: 33px;
+    color: red;
+    font-size: 17px;
+    font-weight: 500;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.footer-bottom {
+    /* background: #324B96; */
+    padding: 10px 0px;
+}
+
+.footer-list {
+    display: flex;
+    justify-content: start;
+    list-style: none;
+    padding: 0px 25px 0px 25px;
+}
+
+.footer-list li a {
+    color: black;
+    padding: 0px 8px;
+    font-size: 14px;
+    font-weight: 700;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    line-height: 30px;
+    transition: all .5s linear;
+}
+
+.copyright {
+    width: 170px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 63px;
+    font-size: 14px;
+}
+
+/* RESPOSIVE PART STARTS FROM HERE */
+
+@media screen and (max-width: 799px) {
+    .wrapper {
+        padding: 0px 0px;
+    }
+    header {
+        padding: 20px 20px;
+    }
+    .menu_bar {
+        display: block;
+    }
+    .menu_bar i {
+        font-size: 28px;
+    }
+    .nav_menu {
+        display: none;
+    }
+    .main-container {
+        display: block;
+        /* height: 985px; */
+    }
+    .steps {
+        background-color: white;
+    }
+    .steps ul li {
+        text-align: center;
+    }
+    .steps ul li a {
+        font-size: 19px;
+    }
+    .steps ul li a span {
+        display: block;
+        text-transform: uppercase;
+        font-weight: 400;
+        font-size: 12px;
+        margin-bottom: 3px;
+    }
+    .steps ul li a span::after {
+        content: "";
+    }
+    .data-view {
+        width: 100%;
+    }
+    .payment-container {
+        width: 100%;
+        padding-bottom: 35px;
+    }
+    .file-submit {
+        padding: 0px 23px;
+        margin-bottom: 15px;
+    }
+    #fileinput {
+        height: 44px;
+        width: 100%;
+        box-sizing: border-box;
+    }
+    input[type="file"] {
+        font-size: 18px;
+    }
+    .payment-btn {
+        margin-top: 15px;
+        margin-left: 0px;
+    }
+    marquee {
+        display: none;
+    }
+    .footer p {
+        width: 100%;
+        text-align: center;
+    }
+    .copyright {
+        width: 100%;
+        padding-top: 0px;
+        padding-bottom: 0px;
+        padding-left: 0px;
+        font-size: 14px;
+    }
+    footer {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 499px) {
+    body {
+        width: 100%;
+        overflow-x: hidden;
+        margin: 0;
+        padding: 0;
+    }
+    .wrapper {
+        /* padding: 0 15px; */
+        width: 100%;
+    }
+    header {
+        width: 100%;
+        box-sizing: border-box;
+        padding: 20px;
+    }
+    .logo {
+        height: 38px;
+    }
+    .logo img {
+        height: auto;
+        max-width: 100%;
+    }
+    .menu_bar {
+        display: block;
+    }
+    .menu_bar i {
+        font-size: 30px;
+    }
+    .main-container {
+        display: block;
+        width: 100%;
+    }
+    .steps {
+        width: 100%;
+        background-color: white;
+        box-sizing: border-box;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .steps ul li {
+        text-align: center;
+    }
+    .steps ul li a {
+        font-size: 19px;
+    }
+    .steps ul li a span {
+        display: block;
+        text-transform: uppercase;
+        font-weight: 400;
+        font-size: 14px;
+        margin-bottom: 3px;
+    }
+    .steps ul li a span::after {
+        content: "";
+    }
+    .data-view h4 {
+        padding-left: 10px;
+    }
+    .payment-container {
+        width: 100%;
+        padding: 0 10px;
+        box-sizing: border-box;
+    }
+    .payment-container img {
+        max-width: 87%;
+        width: auto;
+        height: auto;
+        margin-top: 50px;
+    }
+    h5 {
+        font-size: 17px;
+        padding: 0px 0px;
+        text-align: center;
+    }
+    .file-submit {
+        padding: 0px 23px;
+        margin-bottom: 30px;
+    }
+    #fileinput {
+        height: 44px;
+        width: 100%;
+        box-sizing: border-box;
+    }
+    input[type="file"] {
+        font-size: 18px;
+    }
+    .payment-btn {
+        height: 52px;
+        width: 109%;
+        font-size: 15px;
+        box-sizing: border-box;
+        margin: 12px 0px;
+    }
+    .footer p {
+        width: 100%;
+        text-align: center;
+        font-size: 13px;
+        margin-top: 20px;
+    }
+    .copyright {
+        width: 100%;
+        padding-top: 0px;
+        padding-bottom: 0px;
+        padding-left: 0px;
+        font-size: 14px;
+    }
+}
